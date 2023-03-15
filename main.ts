@@ -154,7 +154,7 @@ input.onButtonPressed(Button.AB, function () {
         }
         music.ringTone((value2 + 1) * 131)
         led.plot(sudden_x, value2)
-        basic.pause(200)
+        basic.pause(blpm)
         music.stopAllSounds()
         sudden_x += 1
     }
@@ -166,7 +166,7 @@ input.onButtonPressed(Button.AB, function () {
         }
         music.ringTone((value2 + 1) * 131)
         led.plot(sudden_x, value2)
-        basic.pause(200)
+        basic.pause(blpm)
         music.stopAllSounds()
         sudden_x += 1
     }
@@ -197,7 +197,8 @@ let notex = 0
 let notes2: number[] = []
 let notes: number[] = []
 let atBlock = 0
-let blpm = 200
+let blpm = 0
+blpm = 200
 DisplayIntro()
 atBlock = 0
 notes = [
